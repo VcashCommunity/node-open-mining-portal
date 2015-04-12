@@ -10,17 +10,19 @@
         "poolserver",
         "bitcoin",
         "litecoin",
+        "vanillacoin",
         "scrypt"
     ],
-    "homepage": "https://github.com/zone117x/node-open-mining-portal",
+    "homepage": "https://github.com/xCoreDev/node-open-mining-portal",
     "bugs": {
-        "url": "https://github.com/zone117x/node-open-mining-portal/issues"
+        "url": "https://github.com/xCoreDev/node-open-mining-portal/issues"
     },
     "license": "GPL-2.0",
     "author": "Matthew Little",
     "contributors": [
         "vekexasia",
-        "TheSeven"
+        "TheSeven",
+        "xCore"
     ],
     "main": "init.js",
     "bin": {
@@ -28,10 +30,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/zone117x/node-open-mining-portal.git"
+        "url": "https://github.com/xCoreDev/node-open-mining-portal.git"
     },
     "dependencies": {
-        "stratum-pool": "git://github.com/zone117x/node-stratum-pool.git",
+        "stratum-pool": "git://github.com/xCoreDev/node-stratum-pool.git",
+        "multi-hashing": "git://github.com/xCoreDev/node-multi-hashing.git",
         "dateformat": "*",
         "node-json-minify": "*",
         "redis": "*",

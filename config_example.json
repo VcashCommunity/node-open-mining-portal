@@ -33,7 +33,7 @@
         "enabled": true,
         "host": "0.0.0.0",
         "port": 80,
-        "stratumHost": "cryppit.com",
+        "stratumHost": "127.0.0.1",
         "stats": {
             "updateInterval": 60,
             "historicalRetention": 43200,
@@ -85,13 +85,13 @@
         },
         "switch3": {
             "enabled": false,
-            "algorithm": "x11",
+            "algorithm": "whirlpoolx",
             "ports": {
                 "5555": {
-                    "diff": 0.001,
+                    "diff": 0.03,
                     "varDiff": {
-                        "minDiff": 0.001,
-                        "maxDiff": 1, 
+                        "minDiff": 0.0032,
+                        "maxDiff": 256,
                         "targetTime": 15, 
                         "retargetTime": 60, 
                         "variancePercent": 30 
