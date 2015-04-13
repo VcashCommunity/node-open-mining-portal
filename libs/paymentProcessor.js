@@ -87,7 +87,7 @@ function SetupForPool(logger, poolOptions, setupFinished){
                     return;
                 }
                 try {
-                    var d = result.data.split('result":')[1].split(',')[0].split('.')[1];
+                    var d = parseFloat(result.data.split('result":')[1].split(',')[0]).toFixed(8).split('.')[1];
                     magnitude = parseInt('10' + new Array(d.length).join('0'));
                     minPaymentSatoshis = parseInt(processingConfig.minimumPayment * magnitude);
                     coinPrecision = magnitude.toString().length - 1;
