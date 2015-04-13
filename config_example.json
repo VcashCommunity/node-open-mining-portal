@@ -32,7 +32,7 @@
     "website": {
         "enabled": true,
         "host": "0.0.0.0",
-        "port": 80,
+        "port": 8080,
         "stratumHost": "127.0.0.1",
         "stats": {
             "updateInterval": 60,
@@ -51,25 +51,25 @@
     },
 
     "switching": {
-        "switch1": {
-            "enabled": false,
-            "algorithm": "sha256",
+        "whirlpoolx": {
+            "enabled": true,
+            "algorithm": "whirlpoolx",
             "ports": {
                 "3333": {
-                    "diff": 10,
+                    "diff": 0.03,
                     "varDiff": {
-                        "minDiff": 16,
-                        "maxDiff": 512,
+                        "minDiff": 0.0032,
+                        "maxDiff": 256,
                         "targetTime": 15,
-                        "retargetTime": 90,
+                        "retargetTime": 60,
                         "variancePercent": 30
                     }
                 }
             }
         },
-        "switch2": {
+        "sha256": {
             "enabled": false,
-            "algorithm": "scrypt",
+            "algorithm": "sha256",
             "ports": {
                 "4444": {
                     "diff": 10,
@@ -79,22 +79,6 @@
                         "targetTime": 15,
                         "retargetTime": 90,
                         "variancePercent": 30
-                    }
-                }
-            }
-        },
-        "switch3": {
-            "enabled": false,
-            "algorithm": "whirlpoolx",
-            "ports": {
-                "5555": {
-                    "diff": 0.03,
-                    "varDiff": {
-                        "minDiff": 0.0032,
-                        "maxDiff": 256,
-                        "targetTime": 15, 
-                        "retargetTime": 60, 
-                        "variancePercent": 30 
                     }
                 }
             }
