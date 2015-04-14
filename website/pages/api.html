@@ -1,10 +1,59 @@
-<div>
-    API Docs here
+<style>
 
-<ul>
-<li>/stats - raw json statistic</li>
-<li>/pool_stats - historical time per pool json </li>
-<li>/live_stats - live stats </li>
+    #topCharts {
+        padding: 18px;
+    }
 
-</ul>
-</div>
+    #topCharts > div > div > svg {
+        display: block;
+        height: 280px;
+    }
+
+    .chartWrapper {
+        border: solid 1px #c7c7c7;
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 18px;
+    }
+
+    .chartLabel {
+        font-size: 1.2em;
+        text-align: center;
+        padding: 4px;
+    }
+
+    .chartHolder {
+
+    }
+
+    table {
+        width: 100%;
+    }
+
+</style>
+<div id="topCharts">
+    <div class="chartWrapper">
+        <div class="chartLabel">API command list</div>
+        <div class="chartHolder">
+            <table class="pure-table">
+                <thead>
+                    <tr>
+                        <th>URL</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tr class="pure-table-odd">
+                    <td>/stats</td>
+                    <td>Raw json statistic</td>
+                </tr>
+                <tr class="pure-table-odd">
+                    <td>/pool_stats </td>
+                    <td>Historical time per pool json</td>
+                </tr>
+                <tr class="pure-table-odd">
+                    <td>/live_stats</td>
+                    <td>Live stats</td>
+                </tr>
+           </table>
+        </div>
+    </div>
