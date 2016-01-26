@@ -1,5 +1,6 @@
 {
     "name": "Vanillacoin",
     "symbol": "VNL",
-    "algorithm": "whirlpoolx"
+	"normalHashing": true,
+    "algorithm": "blake"
 }
