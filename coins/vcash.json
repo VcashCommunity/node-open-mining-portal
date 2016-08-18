@@ -1,0 +1,6 @@
+{
+    "name": "Vcash",
+    "symbol": "XVC",
+    "normalHashing": true,
+    "algorithm": "blake"
+}

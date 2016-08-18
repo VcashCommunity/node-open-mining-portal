@@ -1,12 +1,12 @@
 {
     "enabled": true,
-    "coin": "vanillacoin.json",
+    "coin": "vcash.json",
 
-    "address": "Pool_VNL_Address",
+    "address": "Pool_XVC_Address",
 
     "rewardRecipients": {
-        "PoolOP_VNL_Address_for_reward": 1.5,
-        "Another_VNL_Address_for_reward": 0.1
+        "PoolOP_XVC_Address_for_reward": 1.5,
+        "Another_XVC_Address_for_reward": 0.1
     },
 
     "paymentProcessing": {
