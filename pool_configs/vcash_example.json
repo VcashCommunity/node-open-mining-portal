@@ -1,23 +1,18 @@
 {
     "enabled": true,
     "coin": "vcash.json",
-		// The address that gets the block rewards, which should be set to the daemon's default address
-		// Note that this address will distribute the rewards once a block is received
-    "address": "LOCAL_DAEMON_ADDRESS_HERE",
+
+    "address": "Pool_XVC_Address",
 
     "rewardRecipients": {
-    		// The address you want fees to be sent to. Change the number to raise/lower fees
-        "YOUR-ADDRESS-HERE": 1.0,
-        // 0.1% Donation address to sum01, remove if you want :(
-        "VnTgoWXVM5XVnNT12xZ7ctjpNZ8HWTNiWq": 0.1
+        "PoolOP_XVC_Address_for_reward": 1.5,
+        "Another_XVC_Address_for_reward": 0.1
     },
 
     "paymentProcessing": {
         "enabled": true,
-        // In seconds, checks if the block is confirmed
-        "paymentInterval": 30,
-        // Don't send rewards till they earned at least X coins
-        "minimumPayment": 0.05,
+        "paymentInterval": 20,
+        "minimumPayment": 3,
         "daemon": {
             "host": "127.0.0.1",
             "port": 9195,
