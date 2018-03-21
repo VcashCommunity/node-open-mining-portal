@@ -10,19 +10,19 @@
         "poolserver",
         "bitcoin",
         "litecoin",
-        "vanillacoin",
         "scrypt"
     ],
-    "homepage": "https://github.com/xCoreDev/node-open-mining-portal",
+    "homepage": "https://github.com/zone117x/node-open-mining-portal",
     "bugs": {
-        "url": "https://github.com/xCoreDev/node-open-mining-portal/issues"
+        "url": "https://github.com/zone117x/node-open-mining-portal/issues"
     },
     "license": "GPL-2.0",
     "author": "Matthew Little",
     "contributors": [
         "vekexasia",
         "TheSeven",
-        "xCore"
+        "xCore",
+        "sum01"
     ],
     "main": "init.js",
     "bin": {
@@ -30,26 +30,25 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/xCoreDev/node-open-mining-portal.git"
+        "url": "https://github.com/sum01/node-open-mining-portal.git"
     },
     "dependencies": {
-        "stratum-pool": "git://github.com/xCoreDev/node-stratum-pool.git",
-        "multi-hashing": "git://github.com/xCoreDev/node-multi-hashing.git",
-        "dateformat": "*",
-        "node-json-minify": "*",
-        "redis": "*",
-        "mysql": "*",
-        "async": "*",
-        "express": "*",
+        "async": "1.5.2",
+        "bignum": "0.12.5",
         "body-parser": "*",
-        "compression": "*",
-        "dot": "*",
         "colors": "*",
+        "compression": "*",
+        "dateformat": "1.0.12",
+        "dot": "*",
+        "express": "*",
+        "extend": "*",
+        "mysql": "*",
+        "node-json-minify": "*",
         "node-watch": "*",
-        "request": "*",
         "nonce": "*",
-        "bignum": "*",
-        "extend": "*"
+        "redis": "0.12.1",
+        "request": "*",
+        "stratum-pool": "git://github.com/sum01/node-stratum-pool.git#vcash"
     },
     "engines": {
         "node": ">=0.10"
